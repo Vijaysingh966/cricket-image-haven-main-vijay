@@ -125,12 +125,12 @@ const FeaturedImages = () => {
         )}
         
         <div className="mt-16 text-center">
-          <a 
+          {/* <a 
             href="/explore" 
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-cricket-red hover:bg-cricket-red/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cricket-red transition-colors"
           >
             View All Images
-          </a>
+          </a> */}
           <Link to="/explore">
             <Button className="rounded-full px-8 py-6 text-base bg-cricket-red hover:bg-cricket-red/90 shadow-md hover:shadow-lg transition-all group">
             View All Images
