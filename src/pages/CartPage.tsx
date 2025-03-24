@@ -8,7 +8,8 @@ import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from '@
 import { toast } from 'sonner';
 import { useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
-import Navigation from '@/components/Navigation';
+import Navigation from '@/components/Navigation'; 
+import { Link } from 'react-router-dom';
 
 interface CartItem {
   id: string;
@@ -27,21 +28,21 @@ const CartPage = () => {
       name: 'Cricket Action Shot',
       price: 19.99,
       quantity: 2,
-      image: '/placeholder.svg',
+      image: 'https://res.cloudinary.com/dv7cxq4fy/image/upload/v1742836201/awnkd0lk4owcto6zctwn.jpg',
     },
     {
       id: '2',
       name: 'Stadium Aerial View',
       price: 29.99,
       quantity: 1,
-      image: '/placeholder.svg',
+      image: 'https://res.cloudinary.com/dv7cxq4fy/image/upload/v1742834210/swbwgdlyfzhbvzu3tpsn.jpg',
     },
     {
       id: '3',
       name: 'Team Celebration',
       price: 24.99,
       quantity: 1,
-      image: '/placeholder.svg',
+      image: 'https://res.cloudinary.com/dv7cxq4fy/image/upload/v1742834206/oddzm3fzv5q4o7hzqb4h.jpg',
     },
   ]);
 
@@ -208,7 +209,7 @@ const CartPage = () => {
               Looks like you haven't added any items to your cart yet.
             </p>
             <Button asChild>
-              <a href="/explore">Continue Shopping</a>
+              <Link to="/explore">Continue Shopping</Link>
             </Button>
           </div>
         )}
