@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import ImageCard from './ImageCard';
-
+ 
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 // Updated cricket images featuring Indian cricketers in 4K quality
 const sampleImages = [
   {
@@ -128,6 +131,12 @@ const FeaturedImages = () => {
           >
             View All Images
           </a>
+          <Link to="/explore">
+            <Button className="rounded-full px-8 py-6 text-base bg-cricket-red hover:bg-cricket-red/90 shadow-md hover:shadow-lg transition-all group">
+            View All Images
+              {/* <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" /> */}
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
