@@ -243,7 +243,7 @@ const AuthForms: React.FC<AuthFormsProps> = ({ onLoginSuccess }) => {
                 <Input 
                   id="otp" 
                   type="text" 
-                  placeholder="123456" 
+                  placeholder="••••••"  
                   value={otp}
                   onChange={(e) => setOtp(e.target.value)}
                   required
