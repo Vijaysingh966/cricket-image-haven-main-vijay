@@ -27,7 +27,7 @@ const sampleImages = [
   },
   {
     id: 3,
-    title: 'Indan Team',
+    title: 'India Team',
     imageUrl: 'https://res.cloudinary.com/dv7cxq4fy/image/upload/f_auto,q_auto/igcawpnqgbdd0jxffnlw',
     isPremium: false,
     price: "free",
